@@ -1,0 +1,33 @@
+/* ========================================
+   HEADER.CSS - Estilos específicos do cabeçalho
+   ======================================== */
+
+/* Navegação principal */
+.nav-principal {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.botao-nav {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 12px 24px;
+    font-size: 1rem;
+    backdrop-filter: blur(5px);
+}
+
+.botao-nav:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+/* Ajuste para o título com link */
+.titulo-encantado a {
+    transition: all 0.3s ease;
+}
+
+.titulo-encantado a:hover {
+    text-shadow: 0 0 15px rgba(255, 190, 11, 0.5);
+}

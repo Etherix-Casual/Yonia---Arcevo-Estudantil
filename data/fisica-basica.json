@@ -1,0 +1,152 @@
+[
+    {
+        "pergunta": "Segundo a Primeira Lei de Newton, um corpo em repouso tende a permanecer em repouso e um corpo em movimento retilíneo uniforme tende a permanecer em movimento retilíneo uniforme se:",
+        "opcoes": ["A força resultante for constante", "A força resultante for nula", "A velocidade for variável", "A aceleração for positiva"],
+        "correta": 1,
+        "explicacao": "A Primeira Lei de Newton (Lei da Inércia) afirma que um corpo mantém seu estado de repouso ou movimento retilíneo uniforme se a força resultante sobre ele for nula."
+    },
+    {
+        "pergunta": "Um carro percorre 120 km em 2 horas. Qual é a sua velocidade média em km/h?",
+        "opcoes": ["40 km/h", "60 km/h", "80 km/h", "100 km/h"],
+        "correta": 1,
+        "explicacao": "Velocidade média = distância / tempo = 120 km / 2 h = 60 km/h."
+    },
+    {
+        "pergunta": "Qual é a aceleração de um corpo que varia sua velocidade de 10 m/s para 30 m/s em 5 segundos?",
+        "opcoes": ["2 m/s²", "4 m/s²", "5 m/s²", "8 m/s²"],
+        "correta": 1,
+        "explicacao": "a = Δv/Δt = (30 - 10)/5 = 20/5 = 4 m/s²."
+    },
+    {
+        "pergunta": "De acordo com a Segunda Lei de Newton, a força resultante sobre um corpo é igual a:",
+        "opcoes": ["massa × velocidade", "massa × aceleração", "peso × aceleração", "energia × tempo"],
+        "correta": 1,
+        "explicacao": "A Segunda Lei de Newton é expressa por F = m × a, onde F é a força resultante, m a massa e a a aceleração."
+    },
+    {
+        "pergunta": "Um objeto é lançado verticalmente para cima. No ponto mais alto da trajetória, sua velocidade é:",
+        "opcoes": ["Máxima", "Nula", "Igual à velocidade inicial", "Constante"],
+        "correta": 1,
+        "explicacao": "No ponto mais alto, o objeto para instantaneamente antes de iniciar a descida, portanto a velocidade é nula."
+    },
+    {
+        "pergunta": "Qual é a função horária da posição no Movimento Retilíneo Uniformemente Variado (MRUV)?",
+        "opcoes": ["S = S₀ + v × t", "S = S₀ + v × t + a × t", "S = S₀ + v₀ × t + (1/2) × a × t²", "v = v₀ + a × t"],
+        "correta": 2,
+        "explicacao": "A função horária da posição no MRUV é S = S₀ + v₀t + (1/2)at²."
+    },
+    {
+        "pergunta": "Um móvel parte do repouso e atinge a velocidade de 20 m/s após 4 segundos. Qual foi a aceleração?",
+        "opcoes": ["4 m/s²", "5 m/s²", "6 m/s²", "8 m/s²"],
+        "correta": 1,
+        "explicacao": "a = Δv/Δt = (20 - 0)/4 = 20/4 = 5 m/s²."
+    },
+    {
+        "pergunta": "A Terceira Lei de Newton, também conhecida como Lei da Ação e Reação, afirma que:",
+        "opcoes": ["A força resultante é igual ao produto da massa pela aceleração", "Um corpo permanece em repouso ou MRU se a força resultante for nula", "Para toda ação há uma reação de mesma intensidade, mesma direção e sentido oposto", "A força é diretamente proporcional à massa"],
+        "correta": 2,
+        "explicacao": "A Terceira Lei de Newton estabelece que as forças de ação e reação atuam em pares, em corpos diferentes, com mesma intensidade, mesma direção e sentidos opostos."
+    },
+    {
+        "pergunta": "Um trem de 100 m de comprimento, com velocidade constante de 20 m/s, leva quanto tempo para atravessar completamente uma ponte de 300 m?",
+        "opcoes": ["10 s", "15 s", "20 s", "25 s"],
+        "correta": 2,
+        "explicacao": "Distância total = comprimento do trem + comprimento da ponte = 100 + 300 = 400 m. t = d/v = 400/20 = 20 s."
+    },
+    {
+        "pergunta": "Qual é o peso de um corpo de massa 10 kg em um local onde a aceleração da gravidade é 10 m/s²?",
+        "opcoes": ["10 N", "50 N", "100 N", "1000 N"],
+        "correta": 2,
+        "explicacao": "Peso = m × g = 10 × 10 = 100 N."
+    },
+    {
+        "pergunta": "No MRU (Movimento Retilíneo Uniforme), a aceleração é:",
+        "opcoes": ["Positiva", "Negativa", "Variável", "Nula"],
+        "correta": 3,
+        "explicacao": "No MRU, a velocidade é constante, portanto a aceleração é zero."
+    },
+    {
+        "pergunta": "Um corpo em queda livre nas proximidades da Terra, desprezando a resistência do ar, tem aceleração:",
+        "opcoes": ["Constante e igual à gravidade local", "Aumentando linearmente com o tempo", "Diminuindo com a altura", "Nula"],
+        "correta": 0,
+        "explicacao": "Na queda livre, desprezando o atrito, o corpo está sujeito apenas à aceleração da gravidade, que é constante nas proximidades da superfície terrestre."
+    },
+    {
+        "pergunta": "Um móvel descreve um MRUV com velocidade inicial de 5 m/s e aceleração de 2 m/s². Qual é sua velocidade após 3 segundos?",
+        "opcoes": ["6 m/s", "8 m/s", "10 m/s", "11 m/s"],
+        "correta": 3,
+        "explicacao": "v = v₀ + a×t = 5 + 2×3 = 5 + 6 = 11 m/s."
+    },
+    {
+        "pergunta": "Dois blocos estão em contato sobre uma superfície sem atrito. Uma força de 20 N é aplicada no primeiro bloco. Se a massa do primeiro é 3 kg e do segundo é 2 kg, qual é a força de contato entre eles?",
+        "opcoes": ["8 N", "10 N", "12 N", "20 N"],
+        "correta": 0,
+        "explicacao": "Aceleração do sistema: a = F/(m₁+m₂) = 20/5 = 4 m/s². Força no bloco 2: F₂ = m₂ × a = 2 × 4 = 8 N. Essa é a força de contato."
+    },
+    {
+        "pergunta": "Qual gráfico representa corretamente a posição em função do tempo para um MRUV com aceleração positiva e velocidade inicial nula?",
+        "opcoes": ["Uma reta crescente", "Uma parábola com concavidade para cima", "Uma reta horizontal", "Uma parábola com concavidade para baixo"],
+        "correta": 1,
+        "explicacao": "No MRUV, S = S₀ + v₀t + (1/2)at². Com a > 0 e v₀ = 0, temos uma parábola com concavidade para cima."
+    },
+    {
+        "pergunta": "Um corpo de massa 5 kg está sujeito a uma força resultante de 20 N. Qual é a aceleração adquirida?",
+        "opcoes": ["2 m/s²", "4 m/s²", "5 m/s²", "25 m/s²"],
+        "correta": 1,
+        "explicacao": "a = F/m = 20/5 = 4 m/s²."
+    },
+    {
+        "pergunta": "Um motorista freia bruscamente seu carro. Os passageiros são arremessados para frente devido:",
+        "opcoes": ["À força de frenagem", "À inércia", "Ao atrito dos pneus", "À força centrífuga"],
+        "correta": 1,
+        "explicacao": "Pela Primeira Lei de Newton (inércia), os passageiros tendem a manter seu estado de movimento, sendo arremessados para frente quando o carro freia."
+    },
+    {
+        "pergunta": "Qual é a equação de Torricelli no MRUV?",
+        "opcoes": ["v = v₀ + a×t", "S = S₀ + v₀×t + (1/2)×a×t²", "v² = v₀² + 2×a×ΔS", "ΔS = v×t"],
+        "correta": 2,
+        "explicacao": "A equação de Torricelli relaciona velocidade, aceleração e deslocamento sem depender do tempo: v² = v₀² + 2aΔS."
+    },
+    {
+        "pergunta": "Um objeto cai de uma altura de 80 m. Desprezando a resistência do ar e considerando g = 10 m/s², qual é o tempo de queda?",
+        "opcoes": ["2 s", "4 s", "6 s", "8 s"],
+        "correta": 1,
+        "explicacao": "H = (1/2)gt² → 80 = (1/2)×10×t² → 80 = 5t² → t² = 16 → t = 4 s."
+    },
+    {
+        "pergunta": "Uma força de 10 N atua sobre um corpo de massa 2 kg durante 3 segundos. Qual é o impulso aplicado?",
+        "opcoes": ["10 N·s", "20 N·s", "30 N·s", "40 N·s"],
+        "correta": 2,
+        "explicacao": "Impulso = F × Δt = 10 × 3 = 30 N·s."
+    },
+    {
+        "pergunta": "Um carro de 1000 kg aumenta sua velocidade de 10 m/s para 30 m/s. Qual foi a variação da quantidade de movimento?",
+        "opcoes": ["10.000 kg·m/s", "20.000 kg·m/s", "30.000 kg·m/s", "40.000 kg·m/s"],
+        "correta": 1,
+        "explicacao": "ΔQ = m × Δv = 1000 × (30 - 10) = 1000 × 20 = 20.000 kg·m/s."
+    },
+    {
+        "pergunta": "No lançamento oblíquo, desprezando a resistência do ar, a componente horizontal da velocidade:",
+        "opcoes": ["Aumenta com o tempo", "Diminui com o tempo", "É constante", "É nula no ponto mais alto"],
+        "correta": 2,
+        "explicacao": "Na ausência de forças horizontais (resistência do ar desprezada), a componente horizontal da velocidade permanece constante."
+    },
+    {
+        "pergunta": "Qual é a força de atrito estático máxima que atua sobre um bloco de 10 kg em uma superfície horizontal com coeficiente de atrito estático 0,5? (g = 10 m/s²)",
+        "opcoes": ["20 N", "30 N", "50 N", "100 N"],
+        "correta": 2,
+        "explicacao": "Fatₘₐₓ = μₑ × N = μₑ × m × g = 0,5 × 10 × 10 = 50 N."
+    },
+    {
+        "pergunta": "Dois móveis A e B partem do mesmo ponto. A tem velocidade constante de 10 m/s. B parte do repouso com aceleração constante de 2 m/s². Após quanto tempo B alcança A?",
+        "opcoes": ["5 s", "8 s", "10 s", "12 s"],
+        "correta": 2,
+        "explicacao": "Posição A: S_A = 10t. Posição B: S_B = (1/2)×2×t² = t². Igualando: t² = 10t → t(t - 10)=0 → t = 10 s (t=0 é a partida)."
+    },
+    {
+        "pergunta": "Um satélite orbita a Terra em movimento circular uniforme. Sobre ele, é correto afirmar que:",
+        "opcoes": ["A força resultante é nula", "A aceleração é nula", "A força resultante é centrípeta", "Sua velocidade é constante"],
+        "correta": 2,
+        "explicacao": "No MCU, a força resultante é centrípeta, dirigida ao centro da trajetória, responsável pela mudança de direção da velocidade."
+    }
+]

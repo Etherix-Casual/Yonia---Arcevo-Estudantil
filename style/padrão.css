@@ -1,0 +1,274 @@
+/* 1. VARIÁVEIS GLOBAIS */
+:root {
+    /* Cores principais */
+    --cor-primaria: #0522a4;
+    --cor-primaria-escura: #001573;
+    --cor-secundaria: #7209b7;
+    --cor-destaque: #f72585;
+    --cor-ouro: #ffbe0b;
+    
+    /* Cores neutras */
+    --cor-fundo: #f8f9fa;
+    --cor-superficie: #ffffff;
+    --cor-texto: #2b2d42;
+    --cor-texto-claro: #6c757d;
+    --cor-borda: #dee2e6;
+    
+    /* Sombras */
+    --sombra-pequena: 0 4px 6px rgba(0, 0, 0, 0.05);
+    --sombra-media: 0 10px 25px rgba(0, 0, 0, 0.1);
+    --sombra-grande: 0 20px 40px rgba(0, 0, 0, 0.15);
+    
+    /* Tipografia */
+    --fonte-principal: 'Inter', 'Segoe UI', system-ui, sans-serif;
+    --fonte-titulo: 'Inter', 'Segoe UI', sans-serif;
+    --fonte-monospace: 'Fira Code', 'Courier New', monospace;
+    
+    /* Espaçamentos */
+    --espacamento-padrao: 20px;
+    --espacamento-pequeno: 10px;
+    --espacamento-grande: 40px;
+    
+    /* Bordas */
+    --borda-raio-padrao: 20px;
+    --borda-raio-medio: 16px;
+    --borda-raio-pequeno: 8px;
+    --borda-raio-arredondado: 50px;
+}
+
+/* 2. RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 3. ELEMENTOS BASE */
+body {
+    font-family: var(--fonte-principal);
+    background: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* 4. TIPOGRAFIA HIERÁRQUICA */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--fonte-titulo);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 0.5em;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+}
+
+h2 {
+    font-size: 2rem;
+    color: var(--cor-primaria);
+    position: relative;
+    padding-bottom: 10px;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--cor-destaque), var(--cor-primaria));
+    border-radius: 2px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: var(--cor-texto);
+}
+
+h4 {
+    font-size: 1.2rem;
+    color: var(--cor-secundaria);
+}
+
+p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+a {
+    color: var(--cor-primaria);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: var(--cor-destaque);
+    text-decoration: underline;
+}
+
+/* 5. ESTRUTURA */
+header {
+    background: linear-gradient(135deg, var(--cor-primaria), var(--cor-secundaria));
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 20% 50%, rgba(255,255,255,0.1) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+footer {
+    background: var(--cor-superficie);
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    border-top: 1px solid var(--cor-borda);
+    color: var(--cor-texto-claro);
+    font-size: 0.9rem;
+}
+
+/* 6. LAYOUT */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.pagina {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 30px 60px;
+}
+
+/* 7. COMPONENTES BASE (apenas estruturais, sem temas) */
+.cartao {
+    background: var(--cor-superficie);
+    border-radius: var(--borda-raio-padrao);
+    padding: 35px;
+    margin: 25px 0;
+    box-shadow: var(--sombra-pequena);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.cartao:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--sombra-grande);
+}
+
+.botao {
+    background: linear-gradient(135deg, var(--cor-primaria), var(--cor-secundaria));
+    color: white;
+    padding: 18px 36px;
+    border: none;
+    border-radius: var(--borda-raio-arredondado);
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: var(--sombra-pequena);
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.botao:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--sombra-media);
+    background: linear-gradient(135deg, var(--cor-primaria-escura), var(--cor-destaque));
+    text-decoration: none;
+}
+
+.botao:active {
+    transform: translateY(0);
+}
+
+/* 8. UTILITÁRIOS */
+.texto-centro { text-align: center; }
+.texto-esquerda { text-align: left; }
+.texto-direita { text-align: right; }
+
+.cor-primaria { color: var(--cor-primaria); }
+.cor-secundaria { color: var(--cor-secundaria); }
+.cor-destaque { color: var(--cor-destaque); }
+.cor-texto-claro { color: var(--cor-texto-claro); }
+
+.fundo-claro { background: var(--cor-fundo); }
+.fundo-branco { background: white; }
+.fundo-gradiente { background: linear-gradient(135deg, var(--cor-primaria), var(--cor-secundaria)); color: white; }
+
+.borda-arredondada { border-radius: var(--borda-raio-pequeno); }
+.borda-arredondada-media { border-radius: var(--borda-raio-medio); }
+.borda-arredondada-grande { border-radius: var(--borda-raio-padrao); }
+.borda-arredondada-completa { border-radius: var(--borda-raio-arredondado); }
+
+.mt-1 { margin-top: 0.5rem; }
+.mt-2 { margin-top: 1rem; }
+.mt-3 { margin-top: 1.5rem; }
+.mt-4 { margin-top: 2rem; }
+
+.mb-1 { margin-bottom: 0.5rem; }
+.mb-2 { margin-bottom: 1rem; }
+.mb-3 { margin-bottom: 1.5rem; }
+.mb-4 { margin-bottom: 2rem; }
+
+/* 9. GRIDS */
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .grid-2, .grid-3, .grid-4 {
+        grid-template-columns: 1fr;
+    }
+    
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.5rem; }
+    
+    .pagina {
+        padding: 15px 20px 40px;
+    }
+    
+    .cartao {
+        padding: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 { font-size: 1.75rem; }
+    h2 { font-size: 1.35rem; }
+    
+    .botao {
+        padding: 12px 24px;
+        font-size: 1rem;
+    }
+}

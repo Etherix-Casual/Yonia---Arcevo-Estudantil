@@ -1,0 +1,62 @@
+[
+    {
+        "pergunta": "Qual é o valor de ∫₀¹ x² dx?",
+        "opcoes": ["1/3", "1/2", "2/3", "1"],
+        "correta": 0,
+        "explicacao": "∫ x² dx = x³/3. Avaliado de 0 a 1: (1³/3) - (0³/3) = 1/3."
+    },
+    {
+        "pergunta": "Seja A = [[1, 2], [3, 4]]. Qual é o determinante de A?",
+        "opcoes": ["-2", "2", "10", "-1"],
+        "correta": 0,
+        "explicacao": "det(A) = (1)(4) - (2)(3) = 4 - 6 = -2."
+    },
+    {
+        "pergunta": "Qual é a derivada de f(x) = e^(3x)?",
+        "opcoes": ["3e^(3x)", "e^(3x)", "3e^(x)", "e^(x)"],
+        "correta": 0,
+        "explicacao": "Pela regra da cadeia, d/dx e^(3x) = e^(3x) * 3 = 3e^(3x)."
+    },
+    {
+        "pergunta": "Qual é o valor de lim_{x→0} (sen x)/x?",
+        "opcoes": ["0", "1", "∞", "Não existe"],
+        "correta": 1,
+        "explicacao": "Esse é um limite fundamental: lim_{x→0} sen(x)/x = 1."
+    },
+    {
+        "pergunta": "Qual é a solução geral da equação diferencial y'' - 4y = 0?",
+        "opcoes": ["y = C₁e^(2x) + C₂e^(-2x)", "y = C₁e^(4x) + C₂e^(-4x)", "y = C₁cos(2x) + C₂sen(2x)", "y = C₁cos(4x) + C₂sen(4x)"],
+        "correta": 0,
+        "explicacao": "A equação característica é r² - 4 = 0, raízes r = ±2. Portanto, solução: y = C₁e^(2x) + C₂e^(-2x)."
+    },
+    {
+        "pergunta": "Qual é a parte real do número complexo (1 + i)²?",
+        "opcoes": ["0", "1", "2", "i"],
+        "correta": 0,
+        "explicacao": "(1 + i)² = 1 + 2i + i² = 1 + 2i - 1 = 2i. A parte real é 0."
+    },
+    {
+        "pergunta": "Qual é o raio de convergência da série ∑_{n=1}^{∞} (x^n)/n?",
+        "opcoes": ["0", "1", "∞", "e"],
+        "correta": 1,
+        "explicacao": "Pelo teste da razão, lim |a_{n+1}/a_n| = |x|. A série converge para |x| < 1, raio = 1."
+    },
+    {
+        "pergunta": "Seja T: R² → R² a transformação linear dada por T(x,y) = (x + y, x - y). Qual é a matriz canônica de T?",
+        "opcoes": ["[[1, 1], [1, -1]]", "[[1, 1], [-1, 1]]", "[[1, -1], [1, 1]]", "[[1, 0], [0, 1]]"],
+        "correta": 0,
+        "explicacao": "T(1,0) = (1,1) e T(0,1) = (1,-1). Esses vetores são as colunas da matriz: [[1, 1], [1, -1]]."
+    },
+    {
+        "pergunta": "Qual é o valor de ∮_C (1/z) dz, onde C é o círculo unitário percorrido no sentido anti‑horário?",
+        "opcoes": ["0", "πi", "2πi", "2π"],
+        "correta": 2,
+        "explicacao": "Pelo teorema dos resíduos, a integral de 1/z sobre um contorno fechado que envolve a origem é 2πi."
+    },
+    {
+        "pergunta": "Qual é o autovalor da matriz [[2, 0], [0, 2]] associado ao autovetor (1, 1)?",
+        "opcoes": ["1", "2", "0", "4"],
+        "correta": 1,
+        "explicacao": "A matriz é 2 vezes a identidade. Para qualquer vetor, T(v) = 2v, então 2 é o autovalor."
+    }
+]

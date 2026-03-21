@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yonia - Quiz</title>
+    
+    <link rel="stylesheet" href="/style/padrão.css">
+    <link rel="stylesheet" href="/style/comum.css">
+    <link rel="stylesheet" href="/style/quizz.css">
+    <link rel="stylesheet" href="/style/header.css">
+    <link rel="stylesheet" href="/style/footer.css">
+</head>
+<body>
+    <main class="pagina-quiz">
+        <!-- Tela de configuração -->
+        <div id="telaConfig" class="quiz-config">
+            <div class="cartao config-card">
+                <h2 class="subtitulo">🎮 Configurar Quiz</h2>
+                <p class="texto">Escolha os temas e a quantidade de perguntas.</p>
+                
+                <div class="temas-container">
+                    <h3>Temas disponíveis</h3>
+                    <div id="listaTemas" class="temas-grid">
+                        <!-- Será preenchido via JS com os temas encontrados nos JSONs -->
+                    </div>
+                </div>
+                
+                <div class="quantidade-container">
+                    <h3>Quantidade de perguntas</h3>
+                    <div class="quantidade-opcoes">
+                        <button class="botao-quantidade" data-qtd="5">5</button>
+                        <button class="botao-quantidade" data-qtd="10">10</button>
+                        <button class="botao-quantidade" data-qtd="15">15</button>
+                        <button class="botao-quantidade" data-qtd="0">Todas</button>
+                    </div>
+                    <input type="number" id="quantidadePersonalizada" min="1" placeholder="Personalizado">
+                </div>
+                
+                <div class="config-acoes">
+                    <button id="btnIniciarQuiz" class="botao botao-accent">🚀 Iniciar Quiz</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Tela do quiz (inicialmente oculta) -->
+        <div id="telaQuiz" style="display: none;">
+            <div class="quiz-container">
+                <div class="quiz-header">
+                    <h2 class="subtitulo">🧠 Teste seus conhecimentos</h2>
+                    <div class="progresso-area">
+                        <div class="progresso-barra">
+                            <div class="progresso-preenchido" id="progressoPreenchido"></div>
+                        </div>
+                        <div class="progresso-texto">
+                            <span id="perguntaAtual">0</span> / <span id="totalPerguntas">0</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cartao quiz-card">
+                    <div class="pergunta-texto" id="perguntaTexto"></div>
+                    <div class="opcoes-container" id="opcoesContainer"></div>
+                    <div class="feedback" id="feedback"></div>
+                    <div class="navegacao">
+                        <button class="botao botao-secundario" id="btnAnterior" disabled>◀ Anterior</button>
+                        <button class="botao" id="btnProximo">Próxima ▶</button>
+                    </div>
+                </div>
+
+                <div class="finalizar-area" id="finalizarArea" style="display: none;">
+                    <button class="botao botao-accent" id="btnFinalizar">✅ Finalizar Quiz</button>
+                </div>
+
+                <div class="resultado-area" id="resultadoArea" style="display: none;">
+                    <div class="cartao resultado-card">
+                        <h3>🎉 Resultado Final</h3>
+                        <div class="pontuacao" id="pontuacao"></div>
+                        <div class="resultado-detalhes" id="resultadoDetalhes"></div>
+                        <button class="botao" id="btnReiniciar">🔄 Novo Quiz</button>
+                        <button class="botao botao-secundario" id="btnVoltarConfig">⚙️ Voltar às configurações</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="/script/header.js"></script>
+    <script src="/script/footer.js"></script>
+    <script src="/script/quizz.js"></script>
+</body>
+</html>

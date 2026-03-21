@@ -1,0 +1,128 @@
+/* ========================================
+   MATEMATICA.CSS - ESTILOS ESPECÍFICOS PARA MATEMÁTICA
+   ======================================== */
+
+/* 1. VARIÁVEIS ESPECÍFICAS DA MATEMÁTICA */
+:root {
+    --matematica-cor-primaria: #2b3b6f;
+    --matematica-cor-secundaria: #5e7c9c;
+    --matematica-cor-destaque: #e9b35f;
+    --matematica-cor-formula: #2c3e66;
+}
+
+/* 2. FÓRMULAS MATEMÁTICAS */
+.formula-matematica {
+    background: linear-gradient(135deg, #f0f2f5, #ffffff);
+    padding: 20px 25px;
+    border-radius: var(--borda-raio-medio);
+    font-family: var(--fonte-monospace);
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 20px 0;
+    border: 1px solid rgba(43, 59, 111, 0.2);
+    box-shadow: var(--sombra-pequena);
+    overflow-x: auto;
+}
+
+.formula-matematica .simbolo {
+    color: var(--matematica-cor-primaria);
+    font-weight: bold;
+}
+
+/* 3. EXERCÍCIOS */
+.exercicio-card {
+    background: white;
+    border-radius: var(--borda-raio-medio);
+    padding: 20px;
+    margin: 15px 0;
+    border-left: 4px solid var(--matematica-cor-destaque);
+    box-shadow: var(--sombra-pequena);
+}
+
+.exercicio-card .enunciado {
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.exercicio-card .resposta {
+    background: #f8f9fa;
+    padding: 10px 15px;
+    border-radius: var(--borda-raio-pequeno);
+    margin-top: 10px;
+    display: none;
+}
+
+.exercicio-card .resposta.visivel {
+    display: block;
+}
+
+.botao-resposta {
+    background: none;
+    border: 1px solid var(--matematica-cor-primaria);
+    color: var(--matematica-cor-primaria);
+    padding: 5px 12px;
+    font-size: 0.8rem;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: var(--borda-raio-arredondado);
+    transition: all 0.3s ease;
+}
+
+.botao-resposta:hover {
+    background: var(--matematica-cor-primaria);
+    color: white;
+}
+
+/* 4. NÚMEROS EM DESTAQUE */
+.numero-destaque {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--matematica-cor-primaria), var(--matematica-cor-secundaria));
+    color: white;
+    padding: 5px 12px;
+    border-radius: var(--borda-raio-arredondado);
+    font-family: var(--fonte-monospace);
+    font-weight: bold;
+    margin: 0 2px;
+}
+
+/* 5. CONJUNTOS NUMÉRICOS */
+.conjunto-numerico {
+    display: inline-block;
+    background: var(--matematica-cor-destaque);
+    color: #2b3b6f;
+    font-weight: bold;
+    padding: 4px 12px;
+    border-radius: var(--borda-raio-arredondado);
+    font-family: var(--fonte-monospace);
+    margin: 0 2px;
+}
+
+/* 6. TABELA DE VALORES */
+.tabela-matematica {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: white;
+    border-radius: var(--borda-raio-pequeno);
+    overflow: hidden;
+    box-shadow: var(--sombra-pequena);
+}
+
+.tabela-matematica th {
+    background: var(--matematica-cor-primaria);
+    color: white;
+    padding: 12px;
+    text-align: center;
+}
+
+.tabela-matematica td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid var(--cor-borda);
+}
+
+.tabela-matematica tr:hover {
+    background: rgba(43, 59, 111, 0.05);
+}
+
+/* FIM DO MATEMATICA.CSS */

@@ -1,0 +1,122 @@
+[
+    {
+        "pergunta": "Qual é a classe gramatical da palavra \"casa\" na frase: \"Minha casa é amarela\"?",
+        "opcoes": ["Adjetivo", "Substantivo", "Verbo", "Advérbio"],
+        "correta": 1,
+        "explicacao": "Na frase, \"casa\" é um substantivo concreto, nomeando um objeto."
+    },
+    {
+        "pergunta": "Assinale a alternativa em que a palavra está corretamente acentuada:",
+        "opcoes": ["pára", "côco", "vôo", "idéia"],
+        "correta": 0,
+        "explicacao": "Após o Acordo Ortográfico, \"para\" (verbo) perdeu o acento, mas \"pára\" (forma verbal arcaica) ainda é aceita em alguns contextos; a opção correta considera a forma verbal acentuada em textos mais antigos, mas atualmente a maioria das palavras citadas perdeu o acento. Dentre as opções, \"côco\" é a única que manteve o acento diferencial facultativo."
+    },
+    {
+        "pergunta": "Qual é o plural de \"cidadão\"?",
+        "opcoes": ["cidadãos", "cidadões", "cidadães", "cidadãos e cidadões"],
+        "correta": 0,
+        "explicacao": "O plural de \"cidadão\" é \"cidadãos\", seguindo o padrão de palavras terminadas em -ão que fazem plural em -ãos (como irmão, irmãos)."
+    },
+    {
+        "pergunta": "Na frase \"Ele fez o trabalho rapidamente\", a palavra \"rapidamente\" é um:",
+        "opcoes": ["Adjetivo", "Advérbio", "Substantivo", "Pronome"],
+        "correta": 1,
+        "explicacao": "\"Rapidamente\" é um advérbio de modo, indicando a maneira como a ação foi realizada."
+    },
+    {
+        "pergunta": "Assinale a alternativa que apresenta um erro de concordância verbal:",
+        "opcoes": ["Fazem três anos que não o vejo.", "Havia muitas pessoas na festa.", "Mais de um aluno faltou.", "Ela mesma fez o bolo."],
+        "correta": 0,
+        "explicacao": "O correto é \"Faz três anos...\", pois o verbo \"fazer\" indicando tempo é impessoal e permanece no singular."
+    },
+    {
+        "pergunta": "Qual é o sinônimo de \"enigmático\"?",
+        "opcoes": ["Claro", "Misterioso", "Simples", "Óbvio"],
+        "correta": 1,
+        "explicacao": "\"Enigmático\" significa algo que é misterioso, difícil de compreender, um enigma."
+    },
+    {
+        "pergunta": "Em qual alternativa a crase está corretamente empregada?",
+        "opcoes": ["Vou à praia amanhã.", "Ele chegou à tarde.", "Refiro-me àquela pessoa.", "Todas as anteriores."],
+        "correta": 3,
+        "explicacao": "Todas as opções estão corretas: à praia (a + a), à tarde (locução adverbial feminina), àquela (a + aquela)."
+    },
+    {
+        "pergunta": "A palavra \"desumano\" é formada por qual processo de formação de palavras?",
+        "opcoes": ["Derivação sufixal", "Derivação prefixal", "Composição por justaposição", "Derivação parassintética"],
+        "correta": 1,
+        "explicacao": "\"Desumano\" é formado pelo acréscimo do prefixo \"des-\" à palavra \"humano\", caracterizando derivação prefixal."
+    },
+    {
+        "pergunta": "Assinale a opção em que todas as palavras estão escritas corretamente:",
+        "opcoes": ["excessão, ascensão, compreensão", "exceção, ascenção, compreenção", "exceção, ascensão, compreensão", "exceção, assenção, compreensão"],
+        "correta": 2,
+        "explicacao": "As formas corretas são: exceção, ascensão e compreensão."
+    },
+    {
+        "pergunta": "Qual é a função sintática do termo \"ao professor\" na frase: \"Entreguei o livro ao professor\"?",
+        "opcoes": ["Objeto direto", "Objeto indireto", "Adjunto adnominal", "Sujeito"],
+        "correta": 1,
+        "explicacao": "\"Ao professor\" é objeto indireto, pois completa o verbo \"entregar\" com preposição \"a\"."
+    },
+    {
+        "pergunta": "Na frase \"O menino, cansado, dormiu cedo\", o termo \"cansado\" exerce a função de:",
+        "opcoes": ["Adjunto adverbial", "Adjunto adnominal", "Predicativo do sujeito", "Aposto"],
+        "correta": 2,
+        "explicacao": "\"Cansado\" é predicativo do sujeito, atribuindo uma qualidade ao sujeito \"o menino\"."
+    },
+    {
+        "pergunta": "Qual é o tempo e o modo do verbo \"cantaria\"?",
+        "opcoes": ["Pretérito imperfeito do indicativo", "Futuro do presente do indicativo", "Futuro do pretérito do indicativo", "Pretérito mais-que-perfeito do indicativo"],
+        "correta": 2,
+        "explicacao": "\"Cantaria\" é a 1ª ou 3ª pessoa do singular do futuro do pretérito do indicativo."
+    },
+    {
+        "pergunta": "Assinale a alternativa que completa corretamente a frase: \"Ela ____ ontem, mas não ____.\"",
+        "opcoes": ["veio / pode", "veio / pôde", "vêm / pode", "vêm / pôde"],
+        "correta": 1,
+        "explicacao": "A forma correta é \"veio\" (pretérito perfeito de vir) e \"pôde\" (pretérito perfeito de poder, acentuado)."
+    },
+    {
+        "pergunta": "Qual figura de linguagem está presente em \"As pedras choraram ao ver a destruição\"?",
+        "opcoes": ["Metáfora", "Prosopopeia", "Hipérbole", "Eufemismo"],
+        "correta": 1,
+        "explicacao": "Atribuir ação de chorar a pedras é prosopopeia ou personificação, dando características humanas a seres inanimados."
+    },
+    {
+        "pergunta": "A palavra \"pé\" é classificada como:",
+        "opcoes": ["Monossílaba tônica", "Monossílaba átona", "Oxítona", "Paroxítona"],
+        "correta": 0,
+        "explicacao": "\"Pé\" é uma palavra monossílaba tônica, pois possui apenas uma sílaba e é acentuada."
+    },
+    {
+        "pergunta": "Em qual opção há um erro de regência verbal?",
+        "opcoes": ["Assistimos ao filme ontem.", "Prefiro café a chá.", "O funcionário obedeceu o chefe.", "Namoro com ela há dois anos."],
+        "correta": 2,
+        "explicacao": "O verbo \"obedecer\" exige preposição \"a\": \"obedeceu ao chefe\"."
+    },
+    {
+        "pergunta": "Qual é a função de linguagem predominante em um texto publicitário?",
+        "opcoes": ["Função emotiva", "Função referencial", "Função conativa", "Função metalinguística"],
+        "correta": 2,
+        "explicacao": "A função conativa (ou apelativa) tem como objetivo persuadir, convencer o interlocutor, sendo predominante em propagandas."
+    },
+    {
+        "pergunta": "Assinale a alternativa em que a concordância nominal está correta:",
+        "opcoes": ["É proibido entrada.", "É proibida a entrada.", "É proibido a entrada.", "É proibidas entrada."],
+        "correta": 1,
+        "explicacao": "Com artigo, o adjetivo concorda: \"É proibida a entrada\"."
+    },
+    {
+        "pergunta": "O sujeito da oração \"Fomos convidados para a festa\" é classificado como:",
+        "opcoes": ["Simples", "Composto", "Oculto", "Indeterminado"],
+        "correta": 2,
+        "explicacao": "O sujeito é oculto (determinado pela desinência verbal \"-mos\"), referindo-se a \"nós\"."
+    },
+    {
+        "pergunta": "Qual é o coletivo de \"bois\"?",
+        "opcoes": ["Alcateia", "Manada", "Rebanho", "Cardume"],
+        "correta": 2,
+        "explicacao": "O coletivo de bois é \"boiada\" ou \"rebanho\" (para animais de pastoreio). \"Manada\" é mais usado para elefantes, \"alcateia\" para lobos, \"cardume\" para peixes."
+    }
+]

@@ -1,0 +1,13 @@
+.rodape {
+    background: var(--cor-superficie);
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    border-top: 1px solid var(--cor-borda);
+    color: var(--cor-texto-claro);
+    font-size: 0.9rem;
+}
+
+.rodape p {
+    margin: 5px 0;
+}

@@ -1,0 +1,62 @@
+[
+    {
+        "pergunta": "Qual era a principal característica da democracia em Atenas durante o período de Péricles?",
+        "opcoes": ["A participação direta dos cidadãos nas decisões políticas", "A eleição de representantes para um parlamento central", "O poder absoluto de um rei hereditário", "A exclusão total de homens livres do processo político"],
+        "correta": 0,
+        "explicacao": "A democracia ateniense era direta, onde os cidadãos (homens livres nascidos em Atenas) participavam diretamente da assembleia (Eclésia) para votar leis e decisões."
+    },
+    {
+        "pergunta": "Quem foi o autor da 'Ilíada' e da 'Odisseia', poemas épicos fundamentais para a cultura grega?",
+        "opcoes": ["Sófocles", "Eurípides", "Homero", "Aristóteles"],
+        "correta": 2,
+        "explicacao": "Homero é o poeta grego a quem se atribui a autoria da Ilíada e da Odisseia, que narram respectivamente a Guerra de Troia e o retorno de Ulisses (Odisseu) para casa."
+    },
+    {
+        "pergunta": "Qual era o nome da aliança militar liderada por Atenas durante as Guerras Médicas contra o Império Persa?",
+        "opcoes": ["Liga do Peloponeso", "Liga de Delos", "Confederação de Corinto", "Anfictionia"],
+        "correta": 1,
+        "explicacao": "A Liga de Delos foi formada em 477 a.C. sob liderança ateniense para continuar a luta contra os persas, mas posteriormente se transformou em um instrumento de domínio imperial ateniense."
+    },
+    {
+        "pergunta": "Na cidade-estado de Esparta, qual era o nome dado aos trabalhadores servos pertencentes ao Estado?",
+        "opcoes": ["Metecos", "Periecos", "Escravos", "Hilotas"],
+        "correta": 3,
+        "explicacao": "Os hilotas eram os servos que trabalhavam nas terras espartanas. Eram propriedade do Estado, viviam em condições severas e frequentemente se rebelavam contra a elite guerreira espartana."
+    },
+    {
+        "pergunta": "Qual filósofo grego foi mestre de Alexandre, o Grande, e criou o Liceu (escola filosófica) em Atenas?",
+        "opcoes": ["Platão", "Sócrates", "Aristóteles", "Pitágoras"],
+        "correta": 2,
+        "explicacao": "Aristóteles foi tutor de Alexandre, o Grande. Após retornar a Atenas, fundou o Liceu, onde desenvolveu seus estudos em lógica, metafísica, ética e ciências naturais."
+    },
+    {
+        "pergunta": "As Guerras Médicas foram conflitos entre os gregos e qual império?",
+        "opcoes": ["Império Romano", "Império Persa Aquemênida", "Império Macedônico", "Império Cartaginês"],
+        "correta": 1,
+        "explicacao": "As Guerras Médicas (490-479 a.C.) opuseram as cidades-estado gregas contra o Império Persa Aquemênida, liderado por Dario I e Xerxes I, resultando na vitória grega."
+    },
+    {
+        "pergunta": "Qual foi o principal motivo da Guerra do Peloponeso?",
+        "opcoes": ["A invasão persa na Grécia", "A disputa entre Atenas e Esparta pela hegemonia grega", "A revolta dos hilotas em Esparta", "A expansão de Alexandre, o Grande"],
+        "correta": 1,
+        "explicacao": "A Guerra do Peloponeso (431-404 a.C.) foi travada entre a Liga de Delos (liderada por Atenas) e a Liga do Peloponeso (liderada por Esparta) pela supremacia política e econômica na Grécia antiga."
+    },
+    {
+        "pergunta": "O oráculo mais famoso da Grécia Antiga, localizado no santuário de Apolo, ficava em qual cidade?",
+        "opcoes": ["Olímpia", "Delfos", "Micenas", "Corinto"],
+        "correta": 1,
+        "explicacao": "O Oráculo de Delfos era o mais importante da Grécia Antiga. Localizado no santuário de Apolo, era consultado por cidadãos e governantes antes de tomar decisões importantes."
+    },
+    {
+        "pergunta": "Qual evento marcou o fim da independência das cidades-estado gregas e o início do período helenístico?",
+        "opcoes": ["A vitória na Batalha de Maratona", "A morte de Sócrates", "As conquistas de Alexandre, o Grande", "A Guerra de Troia"],
+        "correta": 2,
+        "explicacao": "As conquistas de Alexandre, o Grande (336-323 a.C.) unificaram a Grécia e expandiram a cultura grega para o Egito e Ásia, encerrando o período clássico e iniciando o período helenístico."
+    },
+    {
+        "pergunta": "Na mitologia grega, quem era o rei dos deuses que habitavam o Monte Olimpo?",
+        "opcoes": ["Ares", "Apolo", "Poseidon", "Zeus"],
+        "correta": 3,
+        "explicacao": "Zeus era o rei dos deuses do Olimpo, deus do céu e do trovão, governante supremo do panteão grego."
+    }
+]

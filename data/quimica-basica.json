@@ -1,0 +1,92 @@
+[
+    {
+        "pergunta": "Qual é o símbolo químico do oxigênio?",
+        "opcoes": ["Ox", "Om", "O", "Og"],
+        "correta": 2,
+        "explicacao": "O símbolo químico do oxigênio é O, derivado do nome em latim 'oxygenium'."
+    },
+    {
+        "pergunta": "Qual é o número atômico do carbono?",
+        "opcoes": ["4", "6", "8", "12"],
+        "correta": 1,
+        "explicacao": "O carbono possui número atômico 6, ou seja, 6 prótons em seu núcleo."
+    },
+    {
+        "pergunta": "Qual das seguintes substâncias é um exemplo de ácido?",
+        "opcoes": ["NaOH", "NaCl", "HCl", "NH₃"],
+        "correta": 2,
+        "explicacao": "HCl (ácido clorídrico) é um ácido forte, enquanto NaOH é base, NaCl é sal e NH₃ é base."
+    },
+    {
+        "pergunta": "Qual é a fórmula da água?",
+        "opcoes": ["H₂O₂", "CO₂", "H₂O", "NaCl"],
+        "correta": 2,
+        "explicacao": "A água é formada por dois átomos de hidrogênio e um de oxigênio: H₂O."
+    },
+    {
+        "pergunta": "Qual é o pH de uma solução neutra?",
+        "opcoes": ["0", "7", "14", "1"],
+        "correta": 1,
+        "explicacao": "Uma solução neutra tem pH igual a 7, como a água pura a 25°C."
+    },
+    {
+        "pergunta": "Qual é o principal gás responsável pelo efeito estufa?",
+        "opcoes": ["Oxigênio", "Nitrogênio", "Dióxido de carbono", "Hidrogênio"],
+        "correta": 2,
+        "explicacao": "O dióxido de carbono (CO₂) é o principal gás de efeito estufa emitido por atividades humanas."
+    },
+    {
+        "pergunta": "Qual elemento é representado pelo símbolo Fe?",
+        "opcoes": ["Flúor", "Fósforo", "Ferro", "Franco"],
+        "correta": 2,
+        "explicacao": "Fe é o símbolo do ferro, derivado do nome em latim 'ferrum'."
+    },
+    {
+        "pergunta": "Em uma reação de neutralização, um ácido reage com uma base para formar:",
+        "opcoes": ["Sal e água", "Ácido e água", "Base e gás", "Sal e gás"],
+        "correta": 0,
+        "explicacao": "A neutralização entre ácido e base produz sal e água, como em HCl + NaOH → NaCl + H₂O."
+    },
+    {
+        "pergunta": "Qual é o estado físico da água a 0°C sob pressão normal?",
+        "opcoes": ["Sólido", "Líquido", "Gasoso", "Plasma"],
+        "correta": 0,
+        "explicacao": "A 0°C, a água atinge o ponto de fusão, podendo estar em equilíbrio sólido-líquido, mas classicamente considera-se sólido (gelo)."
+    },
+    {
+        "pergunta": "Qual é o nome do composto NaCl?",
+        "opcoes": ["Cloreto de sódio", "Hipoclorito de sódio", "Clorato de sódio", "Carbonato de sódio"],
+        "correta": 0,
+        "explicacao": "NaCl é o cloreto de sódio, conhecido popularmente como sal de cozinha."
+    },
+    {
+        "pergunta": "Qual partícula subatômica possui carga negativa?",
+        "opcoes": ["Próton", "Nêutron", "Elétron", "Pósitron"],
+        "correta": 2,
+        "explicacao": "O elétron possui carga elétrica negativa (-1), enquanto o próton é positivo e o nêutron é neutro."
+    },
+    {
+        "pergunta": "Qual é a fórmula do gás carbônico?",
+        "opcoes": ["CO", "CO₂", "C₂O", "CH₄"],
+        "correta": 1,
+        "explicacao": "O gás carbônico ou dióxido de carbono é representado por CO₂."
+    },
+    {
+        "pergunta": "Qual é a camada de valência de um átomo?",
+        "opcoes": ["A camada mais interna", "A camada mais externa", "O núcleo", "A camada intermediária"],
+        "correta": 1,
+        "explicacao": "A camada de valência é a camada mais externa de um átomo, onde estão os elétrons participantes das ligações químicas."
+    },
+    {
+        "pergunta": "Qual dos seguintes elementos é um metal alcalino?",
+        "opcoes": ["Cálcio", "Ferro", "Sódio", "Alumínio"],
+        "correta": 2,
+        "explicacao": "O sódio (Na) pertence à família dos metais alcalinos (Grupo 1), assim como lítio, potássio, etc."
+    },
+    {
+        "pergunta": "Qual é o número de prótons, nêutrons e elétrons em um átomo neutro de oxigênio-16?",
+        "opcoes": ["8, 8, 8", "8, 8, 16", "16, 8, 8", "8, 16, 8"],
+        "correta": 0,
+        "explicacao": "O oxigênio tem número atômico 8 (8 prótons e 8 elétrons). O oxigênio-16 tem número de massa 16, então nêutrons = 16 - 8 = 8."
+    }
+]

@@ -1,0 +1,62 @@
+[
+    {
+        "pergunta": "Segundo a tradição romana, quem foram os fundadores lendários de Roma?",
+        "opcoes": ["Júlio César e Augusto", "Rômulo e Remo", "Cícero e Catilina", "Aníbal e Cipião"],
+        "correta": 1,
+        "explicacao": "Segundo a lenda, Rômulo e Remo, irmãos gêmeos criados por uma loba, fundaram Roma em 753 a.C. Rômulo teria matado Remo e se tornado o primeiro rei."
+    },
+    {
+        "pergunta": "Qual foi a forma de governo que se estabeleceu em Roma após a expulsão do último rei etrusco, Tarquínio, o Soberbo?",
+        "opcoes": ["Império", "Monarquia absolutista", "República", "Tirania"],
+        "correta": 2,
+        "explicacao": "Em 509 a.C., os romanos expulsaram Tarquínio, o Soberbo, e estabeleceram a República Romana, um sistema com magistrados eleitos, Senado e assembleias populares."
+    },
+    {
+        "pergunta": "Quem foi o general cartaginês que, durante a Segunda Guerra Púnica, atravessou os Alpes com elefantes para invadir a Itália?",
+        "opcoes": ["Asdrúbal", "Aníbal Barca", "Amílcar Barca", "Magão"],
+        "correta": 1,
+        "explicacao": "Aníbal Barca liderou as forças cartaginesas na Segunda Guerra Púnica (218-201 a.C.) e realizou a famosa travessia dos Alpes para atacar Roma pelo norte, vencendo na Batalha de Canas."
+    },
+    {
+        "pergunta": "Qual foi o primeiro imperador romano, que colocou fim à República e iniciou o período conhecido como Principado?",
+        "opcoes": ["Júlio César", "Nero", "Augusto (Otávio)", "Constantino"],
+        "correta": 2,
+        "explicacao": "Otávio, sobrinho-neto de Júlio César, derrotou Marco Antônio e Cleópatra em 31 a.C. e tornou-se o primeiro imperador romano em 27 a.C., adotando o título de Augusto."
+    },
+    {
+        "pergunta": "O que eram as Guerras Púnicas?",
+        "opcoes": ["Conflitos entre Roma e os etruscos", "Conflitos entre Roma e Cartago pelo domínio do Mediterrâneo ocidental", "Conflitos entre romanos e gregos", "Conflitos civis entre patrícios e plebeus"],
+        "correta": 1,
+        "explicacao": "As Guerras Púnicas foram três guerras travadas entre Roma e Cartago (264-146 a.C.) que resultaram na destruição de Cartago e na hegemonia romana sobre o Mediterrâneo."
+    },
+    {
+        "pergunta": "Qual imperador romano legalizou o cristianismo com o Édito de Milão em 313 d.C.?",
+        "opcoes": ["Teodósio", "Diocleciano", "Constantino", "Justiniano"],
+        "correta": 2,
+        "explicacao": "O imperador Constantino, juntamente com Licínio, promulgou o Édito de Milão em 313 d.C., que concedeu liberdade de culto aos cristãos, encerrando as perseguições."
+    },
+    {
+        "pergunta": "Qual era o nome da assembleia dos patrícios na Roma Antiga, que posteriormente se tornou a principal instituição política da República?",
+        "opcoes": ["Assembleia da Plebe", "Cúria", "Tribunal da Plebe", "Senado"],
+        "correta": 3,
+        "explicacao": "O Senado Romano era originalmente um conselho de anciãos patrícios. Durante a República, tornou-se a instituição mais poderosa, controlando as finanças, a política externa e as nomeações."
+    },
+    {
+        "pergunta": "Qual evento é tradicionalmente considerado o marco da queda do Império Romano do Ocidente?",
+        "opcoes": ["A morte de Júlio César", "O incêndio de Roma sob Nero", "A deposição do imperador Rômulo Augusto por Odoacro", "A divisão do império por Teodósio"],
+        "correta": 2,
+        "explicacao": "Em 476 d.C., o líder germânico Odoacro depôs o imperador romano Rômulo Augusto. Este evento é tradicionalmente aceito como o marco do fim do Império Romano do Ocidente."
+    },
+    {
+        "pergunta": "Qual código de leis, promulgado no século VI d.C., organizou e consolidou séculos de direito romano, influenciando sistemas jurídicos até os dias atuais?",
+        "opcoes": ["Lei das Doze Tábuas", "Código de Hamurabi", "Corpus Juris Civilis", "Édito de Caracala"],
+        "correta": 2,
+        "explicacao": "O Corpus Juris Civilis (Corpo do Direito Civil) foi ordenado pelo imperador bizantino Justiniano no século VI, compilando e sistematizando o direito romano."
+    },
+    {
+        "pergunta": "Quem foi o ditador romano que, em 49 a.C., cruzou o rio Rubicão com suas legiões, iniciando uma guerra civil que levaria ao fim da República?",
+        "opcoes": ["Pompeu", "Marco Antônio", "Júlio César", "Cipião Africano"],
+        "correta": 2,
+        "explicacao": "Júlio César cruzou o Rubicão, o limite da província da Gália para a Itália, desobedecendo ao Senado e iniciando uma guerra civil contra Pompeu e a facção aristocrática."
+    }
+]

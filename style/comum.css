@@ -1,0 +1,371 @@
+/* ========================================
+   COMUM.CSS - COMPONENTES COMPARTILHADOS
+   Estilos que podem ser usados em qualquer matéria
+   ======================================== */
+
+/* 1. COMPONENTES DE DESTAQUE */
+.destaque-info {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0 10px;
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(67, 97, 238, 0.05), rgba(247, 37, 133, 0.05));
+    border-radius: var(--borda-raio-medio);
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.info-item {
+    text-align: center;
+}
+
+.info-numero {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--cor-primaria);
+    line-height: 1;
+}
+
+.info-rotulo {
+    font-size: 0.9rem;
+    color: var(--cor-texto-claro);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* 2. ESTRUTURA DE GRADE PARA CONTEÚDO */
+.estrutura-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .estrutura-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.estrutura-item {
+    background: rgba(67, 97, 238, 0.02);
+    padding: 20px;
+    border-radius: var(--borda-raio-medio);
+    border: 1px solid rgba(67, 97, 238, 0.1);
+    transition: all 0.3s ease;
+}
+
+.estrutura-item:hover {
+    background: rgba(67, 97, 238, 0.05);
+    transform: translateY(-3px);
+}
+
+.estrutura-titulo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.estrutura-icone {
+    font-size: 1.5rem;
+}
+
+/* 3. CARDS DE EXEMPLO */
+.exemplo-card {
+    background: white;
+    padding: 15px;
+    border-radius: var(--borda-raio-pequeno);
+    margin-top: 12px;
+    border-left: 3px solid var(--cor-destaque);
+    box-shadow: var(--sombra-pequena);
+}
+
+.exemplo-card strong {
+    color: var(--cor-primaria);
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* 4. REPERTÓRIOS/CATEGORIAS */
+.repertorios-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+    .repertorios-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.repertorio-categoria {
+    background: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    border-radius: var(--borda-raio-medio);
+}
+
+.repertorio-categoria h4 {
+    color: var(--cor-primaria-escura);
+    margin: 0 0 15px 0;
+    font-size: 1.1rem;
+}
+
+.lista-repertorios {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lista-repertorios li {
+    padding: 8px 0;
+    border-bottom: 1px dashed rgba(0,0,0,0.05);
+    font-size: 0.9rem;
+    color: var(--cor-texto);
+}
+
+.lista-repertorios li:last-child {
+    border-bottom: none;
+}
+
+/* 5. DICAS E BRILHOS */
+.shine, .brilho {
+    color: var(--cor-destaque);
+    font-size: 1.1rem;
+    font-weight: 600;
+    background: linear-gradient(135deg, rgba(247, 37, 133, 0.1), rgba(67, 97, 238, 0.1));
+    padding: 15px 20px;
+    border-radius: var(--borda-raio-medio);
+    border-left: 4px solid var(--cor-destaque);
+    margin-top: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.shine::before, .brilho::before {
+    content: '💡';
+    margin-right: 10px;
+    font-size: 1.3rem;
+}
+
+.dicas-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin: 20px 0;
+}
+
+@media (max-width: 480px) {
+    .dicas-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.dica {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    padding: 15px;
+    background: rgba(67, 97, 238, 0.02);
+    border-radius: var(--borda-raio-pequeno);
+    transition: all 0.3s ease;
+}
+
+.dica:hover {
+    background: rgba(67, 97, 238, 0.05);
+}
+
+.dica-icone {
+    font-size: 1.5rem;
+    min-width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--cor-primaria), var(--cor-secundaria));
+    color: white;
+    border-radius: var(--borda-raio-pequeno);
+}
+
+.dica strong {
+    display: block;
+    color: var(--cor-primaria-escura);
+    margin-bottom: 3px;
+}
+
+.dica p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--cor-texto-claro);
+}
+
+/* 6. FRASES MOTIVACIONAIS */
+.frase-motivacional {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(67, 97, 238, 0.05), rgba(247, 37, 133, 0.05));
+    border-radius: var(--borda-raio-medio);
+    font-style: italic;
+}
+
+.frase-motivacional p {
+    font-size: 1.2rem;
+    color: var(--cor-texto);
+    margin: 0 0 5px 0;
+}
+
+.frase-motivacional span {
+    color: var(--cor-destaque);
+    font-weight: 600;
+}
+
+/* 7. ELEMENTOS ESPECIAIS */
+.atomo-bg {
+    background: radial-gradient(circle at 70% 30%, rgba(247, 37, 133, 0.03) 0%, transparent 50%);
+}
+
+.legenda-tabela {
+    font-size: 0.8rem;
+    color: var(--cor-texto-claro);
+    text-align: center;
+    margin-top: 5px;
+}
+
+.formula {
+    background-color: rgba(103, 220, 255, 0.833);
+    font-family: var(--fonte-monospace);
+    font-size: xx-large;
+    margin: 3px;
+    padding: 12px;
+    border-radius: var(--borda-raio-pequeno);
+}
+
+/* 8. EFEITOS E ANIMAÇÕES */
+@keyframes flutuar {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.flutuar {
+    animation: flutuar 3s ease-in-out infinite;
+}
+
+/* 9. TIPOGRAFIA LEGADA (compatibilidade) */
+.texto {
+    color: var(--cor-texto);
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.texto-didatico {
+    color: var(--cor-texto);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.texto-informativo {
+    color: #555;
+    font-size: 14px;
+}
+
+.texto-explicativo {
+    color: var(--cor-texto);
+    font-size: 15px;
+    font-style: italic;
+}
+
+.texto-exclamativo {
+    color: #d32f2f;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.texto-encantado {
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 30px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: var(--borda-raio-arredondado);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.titulo {
+    color: #000000;
+    font-size: 40px;
+    font-family: var(--fonte-principal);
+    text-align: center;
+}
+
+.titulo-encantado {
+    color: var(--cor-ouro);
+    font-size: 4.5rem;
+    font-weight: 800;
+    text-shadow: 3px 3px 0 rgba(0,0,0,0.2), 6px 6px 0 rgba(255,255,255,0.1);
+    margin-bottom: 10px;
+    letter-spacing: -0.02em;
+    position: relative;
+    display: inline-block;
+    animation: flutuar 3s ease-in-out infinite;
+}
+
+.subtitulo {
+    color: var(--cor-primaria-escura);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.subtitulo::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--cor-destaque), var(--cor-primaria));
+    border-radius: 2px;
+    transition: width 0.3s ease;
+}
+
+.cartao:hover .subtitulo::after {
+    width: 100px;
+}
+
+/* 10. DECORAÇÕES DE FUNDO */
+.pagina::before {
+    content: '✧';
+    position: fixed;
+    top: 50px;
+    left: 30px;
+    font-size: 100px;
+    color: rgba(67, 97, 238, 0.05);
+    transform: rotate(15deg);
+    z-index: -1;
+    pointer-events: none;
+}
+
+.pagina::after {
+    content: '✦';
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    font-size: 150px;
+    color: rgba(247, 37, 133, 0.05);
+    transform: rotate(-10deg);
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* FIM DO COMUM.CSS */

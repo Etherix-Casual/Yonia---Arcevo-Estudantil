@@ -1,0 +1,336 @@
+/* ========================================
+   QUIZZ.CSS - Estilos para o sistema de quiz
+   ======================================== */
+
+.pagina-quiz {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    min-height: calc(100vh - 200px);
+}
+
+.quiz-container {
+    width: 100%;
+}
+
+/* Barra de progresso */
+.progresso-area {
+    margin: 20px 0 30px;
+}
+
+.progresso-barra {
+    background: var(--cor-borda);
+    border-radius: var(--borda-raio-arredondado);
+    height: 12px;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+
+.progresso-preenchido {
+    background: linear-gradient(90deg, var(--cor-primaria), var(--cor-destaque));
+    width: 0%;
+    height: 100%;
+    transition: width 0.3s ease;
+    border-radius: var(--borda-raio-arredondado);
+}
+
+.progresso-texto {
+    text-align: right;
+    font-size: 0.9rem;
+    color: var(--cor-texto-claro);
+}
+
+/* Card do quiz */
+.quiz-card {
+    margin: 0;
+    padding: 30px;
+}
+
+.pergunta-texto {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+    line-height: 1.3;
+    color: var(--cor-texto);
+}
+
+/* Opções de resposta */
+.opcoes-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.opcao {
+    background: var(--cor-fundo);
+    border: 2px solid var(--cor-borda);
+    border-radius: var(--borda-raio-medio);
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.opcao:hover {
+    background: rgba(5, 34, 164, 0.05);
+    border-color: var(--cor-primaria);
+    transform: translateX(5px);
+}
+
+.opcao.selecionada {
+    background: linear-gradient(135deg, rgba(5, 34, 164, 0.1), rgba(114, 9, 183, 0.1));
+    border-color: var(--cor-primaria);
+    position: relative;
+}
+
+.opcao.selecionada::before {
+    content: '✓';
+    position: absolute;
+    right: 20px;
+    color: var(--cor-primaria);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.opcao-letra {
+    font-weight: bold;
+    color: var(--cor-primaria);
+    background: white;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: var(--sombra-pequena);
+}
+
+.opcao-texto {
+    flex: 1;
+}
+
+/* Feedback */
+.feedback {
+    margin: 20px 0;
+    padding: 12px 20px;
+    border-radius: var(--borda-raio-medio);
+    background: var(--cor-fundo);
+    border-left: 4px solid var(--cor-destaque);
+    display: none;
+}
+
+.feedback.mostrar {
+    display: block;
+}
+
+.feedback.correto {
+    background: rgba(46, 125, 50, 0.1);
+    border-left-color: #2e7d32;
+    color: #1b5e20;
+}
+
+.feedback.errado {
+    background: rgba(211, 47, 47, 0.1);
+    border-left-color: #d32f2f;
+    color: #c62828;
+}
+
+/* Navegação */
+.navegacao {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.botao-secundario {
+    background: linear-gradient(135deg, #6c757d, #495057);
+}
+
+.botao-secundario:hover {
+    background: linear-gradient(135deg, #5a6268, #343a40);
+}
+
+.botao-accent {
+    background: linear-gradient(135deg, var(--cor-destaque), var(--cor-secundaria));
+}
+
+.botao-accent:hover {
+    background: linear-gradient(135deg, #e5177a, #9a0e7a);
+}
+
+/* Área de finalizar */
+.finalizar-area {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Resultado */
+.resultado-area {
+    margin-top: 30px;
+}
+
+.resultado-card {
+    text-align: center;
+    background: linear-gradient(135deg, var(--cor-superficie), var(--cor-fundo));
+}
+
+.pontuacao {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 20px 0;
+    background: linear-gradient(135deg, var(--cor-primaria), var(--cor-destaque));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.resultado-detalhes {
+    text-align: left;
+    margin: 20px 0;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.detalhe-item {
+    padding: 10px;
+    border-bottom: 1px solid var(--cor-borda);
+    margin: 5px 0;
+}
+
+.detalhe-item.correto {
+    border-left: 3px solid #2e7d32;
+    padding-left: 15px;
+}
+
+.detalhe-item.errado {
+    border-left: 3px solid #d32f2f;
+    padding-left: 15px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .quiz-card {
+        padding: 20px;
+    }
+    
+    .pergunta-texto {
+        font-size: 1.2rem;
+    }
+    
+    .opcao {
+        padding: 12px 15px;
+    }
+    
+    .navegacao {
+        flex-direction: column;
+    }
+    
+    .navegacao .botao {
+        width: 100%;
+    }
+}
+
+/* Adicione ao final do arquivo existente */
+
+/* Tela de configuração */
+.quiz-config {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.config-card {
+    padding: 40px;
+}
+
+.temas-container {
+    margin: 30px 0;
+}
+
+.temas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.tema-card {
+    background: var(--cor-fundo);
+    border: 2px solid var(--cor-borda);
+    border-radius: var(--borda-raio-medio);
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tema-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--sombra-pequena);
+}
+
+.tema-card.selecionado {
+    background: linear-gradient(135deg, rgba(5, 34, 164, 0.1), rgba(114, 9, 183, 0.1));
+    border-color: var(--cor-primaria);
+    position: relative;
+}
+
+.tema-card.selecionado::after {
+    content: '✓';
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: var(--cor-primaria);
+    font-weight: bold;
+}
+
+.tema-nome {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.tema-qtd {
+    font-size: 0.8rem;
+    color: var(--cor-texto-claro);
+}
+
+.quantidade-container {
+    margin: 30px 0;
+}
+
+.quantidade-opcoes {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 15px 0;
+}
+
+.botao-quantidade {
+    background: var(--cor-fundo);
+    border: 2px solid var(--cor-borda);
+    padding: 10px 20px;
+    border-radius: var(--borda-raio-arredondado);
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.botao-quantidade.ativo {
+    background: var(--cor-primaria);
+    border-color: var(--cor-primaria);
+    color: white;
+}
+
+#quantidadePersonalizada {
+    width: 150px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.config-acoes {
+    text-align: center;
+    margin-top: 30px;
+}

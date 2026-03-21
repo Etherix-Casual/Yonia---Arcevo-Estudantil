@@ -1,0 +1,62 @@
+[
+    {
+        "pergunta": "Qual evento é tradicionalmente considerado o marco inicial da Idade Média no Ocidente?",
+        "opcoes": ["A coroação de Carlos Magno", "A queda do Império Romano do Ocidente (476 d.C.)", "O início das Cruzadas", "O Grande Cisma do Oriente"],
+        "correta": 1,
+        "explicacao": "A deposição do último imperador romano do Ocidente, Rômulo Augusto, em 476 d.C., é tradicionalmente aceita como o marco que separa a Antiguidade da Idade Média."
+    },
+    {
+        "pergunta": "Qual sistema político, econômico e social predominou na Europa Ocidental durante a Alta Idade Média, baseado em relações de suserania e vassalagem e na exploração de terras?",
+        "opcoes": ["Capitalismo", "Socialismo", "Feudalismo", "Escravismo Antigo"],
+        "correta": 2,
+        "explicacao": "O feudalismo foi o sistema predominante na Europa medieval, caracterizado por relações de vassalagem entre suseranos e vassalos, concessão de feudos (terras) e economia ruralizada e autossuficiente."
+    },
+    {
+        "pergunta": "Quem foi coroado Imperador do Ocidente pelo Papa Leão III no ano 800, unificando grande parte da Europa e sendo considerado o 'Pai da Europa'?",
+        "opcoes": ["Carlos Martel", "Pepino, o Breve", "Carlos Magno", "Luís IX (São Luís)"],
+        "correta": 2,
+        "explicacao": "Carlos Magno, rei dos francos, foi coroado Imperador do Ocidente em 800 d.C., consolidando um vasto império que abrangia grande parte da Europa ocidental e central."
+    },
+    {
+        "pergunta": "As Cruzadas foram expedições militares organizadas pela cristandade europeia com qual objetivo principal?",
+        "opcoes": ["Conquistar o Império Bizantino", "Retomar a Terra Santa (Jerusalém) do domínio muçulmano", "Expandir o comércio com a Ásia", "Derrotar os vikings no norte da Europa"],
+        "correta": 1,
+        "explicacao": "As Cruzadas (séculos XI-XIII) foram expedições militares cristãs cujo objetivo principal era retomar Jerusalém e a Terra Santa do controle muçulmano e auxiliar o Império Bizantino."
+    },
+    {
+        "pergunta": "Qual foi o grande evento demográfico e social que assolou a Europa no século XIV, matando aproximadamente um terço da população?",
+        "opcoes": ["A Guerra dos Cem Anos", "A Grande Fome de 1315-1317", "A Peste Negra (Peste Bubônica)", "A Inquisição"],
+        "correta": 2,
+        "explicacao": "A Peste Negra (1347-1351) foi uma pandemia de peste bubônica que dizimou cerca de um terço da população europeia, causando profundas transformações sociais e econômicas."
+    },
+    {
+        "pergunta": "O que foi o Cisma do Ocidente (1378-1417)?",
+        "opcoes": ["A divisão entre a Igreja Católica e a Igreja Ortodoxa", "A separação entre o clero secular e o regular", "O período em que houve dois e depois três papas simultaneamente", "A criação da Igreja Anglicana"],
+        "correta": 2,
+        "explicacao": "O Grande Cisma do Ocidente foi uma crise na Igreja Católica onde houve dois, e posteriormente três, papas reivindicando autoridade, dividindo a lealdade dos reinos europeus."
+    },
+    {
+        "pergunta": "Qual foi o acordo que, em 843, dividiu o Império Carolíngio entre os netos de Carlos Magno, contribuindo para a formação da França e da Alemanha?",
+        "opcoes": ["Concordata de Worms", "Paz de Deus", "Tratado de Verdun", "Bula Áurea"],
+        "correta": 2,
+        "explicacao": "O Tratado de Verdun (843) dividiu o Império Carolíngio em três partes: França Ocidental (base da França), França Oriental (base da Alemanha) e Lotaríngia."
+    },
+    {
+        "pergunta": "Qual cidade foi o centro do Império Bizantino, conhecida como a 'Nova Roma', e caiu para os turcos otomanos em 1453?",
+        "opcoes": ["Roma", "Constantinopla", "Jerusalém", "Antioquia"],
+        "correta": 1,
+        "explicacao": "Constantinopla (atual Istambul), capital do Império Bizantino, foi conquistada pelos turcos otomanos em 1453 sob o comando de Maomé II, marcando o fim da Idade Média para muitos historiadores."
+    },
+    {
+        "pergunta": "Os vikings, oriundos da Escandinávia, foram conhecidos na Idade Média por suas:",
+        "opcoes": ["Atividades comerciais apenas", "Invasões, pilhagens e exploração marítima", "Construção de castelos góticos", "Tradução de textos clássicos"],
+        "correta": 1,
+        "explicacao": "Os vikings foram povos nórdicos conhecidos por suas incursões de saque e pilhagem na Europa (séculos VIII-XI), além de serem notáveis navegadores e comerciantes."
+    },
+    {
+        "pergunta": "Qual estilo artístico predominou na Europa medieval durante o período de florescimento das cidades e construção das grandes catedrais com arcos ogivais e vitrais?",
+        "opcoes": ["Românico", "Bizantino", "Gótico", "Barroco"],
+        "correta": 2,
+        "explicacao": "O estilo Gótico (séculos XII-XV) caracterizou-se pelo uso do arco ogival, abóbadas em cruzaria, vitrais coloridos e grande verticalidade, sendo o estilo das grandes catedrais medievais como Notre-Dame."
+    }
+]
