@@ -185,6 +185,15 @@ footer {
     display: inline-block;
     text-align: center;
     white-space: nowrap;
+    letter-spacing: 0.5px;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    text-transform: uppercase;
+    vertical-align: middle;
+    min-height: 60px;
+    line-height: 1.2;
+    z-index: 1;
 }
 
 .botao:hover {
