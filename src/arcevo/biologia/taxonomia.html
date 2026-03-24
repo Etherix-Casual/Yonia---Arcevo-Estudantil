@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yonia - Taxonomia: a arte de classificar a vida 🌿</title>
+
+    <!-- Folhas de estilo principais (mesmas da PA) -->
+    <link rel="stylesheet" href="../../../style/padrão.css">
+    <link rel="stylesheet" href="../../../style/comum.css">
+    <link rel="stylesheet" href="../../../style/header.css">
+    <link rel="stylesheet" href="../../../style/footer.css">
+
+    <!-- Estilo extra específico para a página de biologia: hierarquia visual tipo pirâmide / coluna -->
+    <style>
+        /* ===== COMPONENTES VISUAIS PARA TAXONOMIA ===== */
+        /* pirâmide hierárquica dos níveis taxonômicos */
+        .piramide-taxo {
+            margin: 30px 0 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+        }
+        .nivel-taxo {
+            background: linear-gradient(95deg, rgba(5, 34, 164, 0.06), rgba(114, 9, 183, 0.06));
+            border-left: 5px solid var(--accent);
+            border-radius: 28px;
+            padding: 12px 24px;
+            width: 100%;
+            max-width: 700px;
+            transition: all 0.2s ease;
+            backdrop-filter: blur(2px);
+            box-shadow: var(--shadow-sm);
+        }
+        .nivel-taxo:hover {
+            transform: scale(1.01) translateX(6px);
+            background: rgba(114, 9, 183, 0.08);
+            border-left-width: 8px;
+        }
+        .nivel-nome {
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: var(--primary);
+            display: inline-block;
+            margin-right: 15px;
+            letter-spacing: -0.3px;
+        }
+        .nivel-desc {
+            font-size: 1rem;
+            color: var(--text);
+            font-weight: 500;
+        }
+        .nivel-exemplo {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            margin-top: 6px;
+            font-style: italic;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .exemplo-tag {
+            background: rgba(247, 37, 133, 0.1);
+            padding: 2px 12px;
+            border-radius: 30px;
+            font-family: monospace;
+            font-size: 0.8rem;
+        }
+        /* coluna de níveis em grid para os menores níveis */
+        .niveis-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+        .card-nivel {
+            background: var(--surface);
+            border-radius: 24px;
+            padding: 18px;
+            text-align: center;
+            box-shadow: var(--shadow-sm);
+            transition: all 0.2s;
+            border: 1px solid rgba(114, 9, 183, 0.15);
+        }
+        .card-nivel:hover {
+            transform: translateY(-6px);
+            border-color: var(--accent);
+        }
+        .card-nivel h4 {
+            font-size: 1.5rem;
+            margin: 0 0 8px 0;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        .card-nivel p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+        .sub-especie-card {
+            background: radial-gradient(ellipse at 20% 30%, rgba(247, 37, 133, 0.05), rgba(5, 34, 164, 0.02));
+            border-radius: 28px;
+            padding: 20px 25px;
+            border: 1px dashed var(--accent);
+            margin: 20px 0;
+        }
+        .nome-cientifico {
+            font-family: 'Fira Code', monospace;
+            font-size: 1.2rem;
+            background: #f1f3f5;
+            padding: 6px 14px;
+            border-radius: 40px;
+            display: inline-block;
+            font-style: italic;
+        }
+        .curiosidade {
+            background: #fff9e0;
+            border-radius: 20px;
+            padding: 15px 20px;
+            border-left: 8px solid var(--gold);
+            margin: 15px 0;
+        }
+        @media (max-width: 700px) {
+            .nivel-nome { font-size: 1.2rem; }
+            .nivel-taxo { padding: 10px 18px; }
+            .piramide-taxo { gap: 8px; }
+        }
+        /* tabela comparativa informal */
+        .tabela-taxo {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--surface);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            margin: 20px 0;
+        }
+        .tabela-taxo th {
+            background: var(--primary);
+            color: white;
+            padding: 12px;
+            font-weight: 600;
+        }
+        .tabela-taxo td {
+            padding: 12px;
+            border-bottom: 1px solid var(--cor-borda);
+        }
+        .tabela-taxo tr:hover {
+            background: rgba(5, 34, 164, 0.03);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho injetado via header.js (mesmo padrão do projeto) -->
+    <script src="../../../script/header.js"></script>
+
+    <main class="pagina">
+        <!-- CARD 1: O que é taxonomia? -->
+        <section class="cartao">
+            <h2 class="subtitulo">🧬 Taxonomia: a ciência da organização da vida</h2>
+            <p class="texto">Imagine uma biblioteca gigantesca com todos os seres vivos do planeta — desde as bactérias mais microscópicas até a baleia-azul. A <strong class="formula-inline">taxonomia</strong> é justamente o sistema de organização que coloca cada espécie numa prateleira lógica, ajudando cientistas do mundo todo a se comunicarem sem confusão. Foi o botânico sueco <strong>Carl Linnaeus</strong> (1707–1778) quem criou as bases da classificação moderna. Graças a ele, a gente pode dizer "<em>Homo sapiens</em>" e todo mundo sabe exatamente que bicho é esse: a gente! 🧠</p>
+            
+            <div class="destaque-info">
+                <div class="info-item">
+                    <span class="info-numero">~8,7 mi</span>
+                    <span class="info-rotulo">espécies estimadas na Terra</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-numero">1735</span>
+                    <span class="info-rotulo">Systema Naturae (Linnaeus)</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-numero">🌱🐺</span>
+                    <span class="info-rotulo">classificação universal</span>
+                </div>
+            </div>
+            <div class="shine">
+                A ideia é simples: a gente agrupa os seres por características em comum. Quanto mais perto no parentesco, mais níveis eles compartilham. É tipo uma <strong>árvore genealógica gigante</strong> da vida!
+            </div>
+        </section>
+
+        <!-- CARD 2: Os níveis hierárquicos (Domínio → Espécie) -->
+        <section class="cartao">
+            <h2 class="subtitulo">📚 Do geral ao específico: os 8 degraus da classificação</h2>
+            <p class="texto">A hierarquia taxonômica clássica tem oito níveis principais. Começamos no <strong>Domínio</strong> (o grupo mais abrangente) e vamos descendo até a <strong>Espécie</strong> (o grupo mais exclusivo). Quanto mais descemos, mais características específicas os organismos compartilham. Olha só como fica na prática com dois exemplos: a gente (humano) e um bichinho muito querido, o <strong>lobo-guará</strong>.</p>
+
+            <!-- Pirâmide estilizada com os níveis -->
+            <div class="piramide-taxo">
+                <div class="nivel-taxo">
+                    <span class="nivel-nome">🌍 DOMÍNIO</span>
+                    <span class="nivel-desc"> → Eukarya (células com núcleo)</span>
+                    <div class="nivel-exemplo"><span class="exemplo-tag">Humano: Eukarya</span> <span class="exemplo-tag">Lobo-guará: Eukarya</span></div>
+                </div>
+                <div class="nivel-taxo">
+                    <span class="nivel-nome">👑 REINO</span>
+                    <span class="nivel-desc"> → Animalia (animais)</span>
+                    <div class="nivel-exemplo"><span class="exemplo-tag">Animalia</span> <span class="exemplo-tag">Animalia</span></div>
+                </div>
+                <div class="nivel-taxo">
+                    <span class="nivel-nome">🐟 FILO (ou divisão)</span>
+                    <span class="nivel-desc"> → Chordata (animais com notocorda / cordados)</span>
+                    <div class="nivel-exemplo"><span class="exemplo-tag">Chordata</span> <span class="exemplo-tag">Chordata</span></div>
+                </div>
+                <div class="nivel-taxo">
+                    <span class="nivel-nome">🐭 CLASSE</span>
+                    <span class="nivel-desc"> → Mammalia (mamíferos)</span>
+                    <div class="nivel-exemplo"><span class="exemplo-tag">Mammalia</span> <span class="exemplo-tag">Mammalia</span></div>
+                </div>
+                <div class="nivel-taxo">
+                    <span class="nivel-nome">🐒 ORDEM</span>
+                    <span class="nivel-desc"> → Primates (humanos) / Carnivora (lobo-guará)</span>
+                    <div class="nivel-exemplo"><span class="exemplo-tag">Primates</span> <span class="exemplo-tag">Carnivora</span></div>
+                </div>
+                <div class="nivel-taxo">
+                    <span class="nivel-nome">🏠 FAMÍLIA</span>
+                    <span class="nivel-desc"> → Hominidae (grandes primatas) / Canidae (canídeos)</span>
+                    <div class="nivel-exemplo"><span class="exemplo-tag">Hominidae</span> <span class="exemplo-tag">Canidae</span></div>
+                </div>
+                <div class="nivel-taxo">
+                    <span class="nivel-nome">🔬 GÊNERO</span>
+                    <span class="nivel-desc"> → Homo / Chrysocyon</span>
+                    <div class="nivel-exemplo"><span class="exemplo-tag">Homo</span> <span class="exemplo-tag">Chrysocyon (lobo-guará é único gênero!)</span></div>
+                </div>
+                <div class="nivel-taxo">
+                    <span class="nivel-nome">✨ ESPÉCIE</span>
+                    <span class="nivel-desc"> → Homo sapiens / Chrysocyon brachyurus</span>
+                    <div class="nivel-exemplo"><span class="exemplo-tag">sapiens</span> <span class="exemplo-tag">brachyurus</span></div>
+                </div>
+            </div>
+            <p class="texto"><strong>✨ Bora fixar:</strong> a gente usa um macete famoso: <strong>“DOREFICOFAGE”</strong> — cada silaba ou inicial lembra um nível! (DO - Domínio, RE - Reino, FI - Filo, C - Classe, O -Ordem, FA - Família, G -Gênero, E - Espécie).</p>
+        </section>
+
+        <!-- CARD 3: Detalhando cada nível com exemplos divertidos -->
+        <section class="cartao">
+            <h2 class="subtitulo">🔍 Cada nível, uma lupa diferente</h2>
+            <p class="texto">Vamos entender melhor cada categoria com exemplos gostosos de ler. Lembre-se: quanto mais perto do topo (Domínio), mais bichos diferentes estão no mesmo grupo. Lá embaixo (Espécie), só os que cruzam entre si e geram filhotes férteis.</p>
+            <div class="niveis-grid">
+                <div class="card-nivel"><h4>Domínio</h4><p>Bactéria, Archaea ou Eukarya. Se tem núcleo organizado, é Eukarya. Plantas, fungos, animais, todos aí.</p></div>
+                <div class="card-nivel"><h4>Reino</h4><p>Animalia, Plantae, Fungi, Protista, Monera (antigo). Ex: o cogumelo que você come tá no Reino Fungi!</p></div>
+                <div class="card-nivel"><h4>Filo</h4><p>Chordata (cordados), Arthropoda (artrópodes), Mollusca... <br> Artrópodes são os que têm patas articuladas: insetos, aranhas.</p></div>
+                <div class="card-nivel"><h4>Classe</h4><p>Mammalia (mamíferos), Aves, Reptilia, Amphibia. Só os mamíferos têm pelos e glândulas mamárias.</p></div>
+                <div class="card-nivel"><h4>Ordem</h4><p>Primates, Rodentia, Carnivora. Os primatas têm polegares opositores e cérebro desenvolvido.</p></div>
+                <div class="card-nivel"><h4>Família</h4><p>Hominidae (humanos, chimpanzés), Felidae (gatos), Canidae (cachorros). A família reúne gêneros próximos.</p></div>
+                <div class="card-nivel"><h4>Gênero</h4><p>Homo, Panthera (leão, tigre), Canis (lobo, coiote). É o sobrenome do nome científico.</p></div>
+                <div class="card-nivel"><h4>Espécie</h4><p><em>Homo sapiens</em>, <em>Panthera leo</em> (leão), <em>Canis familiaris</em> (cachorro). Populações que se reproduzem naturalmente.</p></div>
+            </div>
+            <div class="curiosidade">
+                🧠 <strong>Curiosidade nível hard:</strong> a orca (<em>Orcinus orca</em>) e o golfinho-nariz-de-garrafa estão na mesma ordem (Cetartiodactyla) mas em famílias diferentes. E o tigre e o leão são do mesmo gênero <em>Panthera</em>, mas espécies diferentes — ainda assim podem gerar híbridos (ligre), mas geralmente inférteis. Olha como a classificação reflete a evolução!
+            </div>
+        </section>
+
+        <!-- CARD 4: Espécie e o famoso conceito de subespécie (comentário completo) -->
+        <section class="cartao">
+            <h2 class="subtitulo">🐕 Espécie + Subespécie: quando a variação vira detalhe</h2>
+            <p class="texto">A <strong>espécie</strong> é a unidade básica da classificação. Mas a natureza adora diversidade! Dentro de uma mesma espécie podem existir grupos com características diferentes (geralmente separados geograficamente) — são as <strong>subespécies</strong>. 💡</p>
+            <div class="sub-especie-card">
+                <h3 style="margin-top:0; color:var(--secondary);">🔹 O que é uma subespécie?</h3>
+                <p>Subespécie (ssp.) é uma população geograficamente isolada que desenvolveu diferenças morfológicas ou genéticas, mas ainda pode cruzar com outros membros da espécie e gerar descendentes férteis. É como "primos" mais distantes dentro da mesma família. Na nomenclatura, usamos um terceiro nome: <strong>trinômio</strong>. Exemplo clássico: o lobo cinzento (<em>Canis lupus</em>) e o cão doméstico (<em>Canis lupus familiaris</em>) — sim, o seu cachorro é uma subespécie do lobo! 🐺🐕</p>
+                <div style="margin: 15px 0;">
+                    <span class="nome-cientifico">Canis lupus lupus</span> → subespécie nominal (lobo euro-asiático)<br>
+                    <span class="nome-cientifico">Canis lupus familiaris</span> → cachorro doméstico<br>
+                    <span class="nome-cientifico">Canis lupus baileyi</span> → lobo-mexicano
+                </div>
+                <p>Outros exemplos famosos: o tigre-de-bengala (<em>Panthera tigris tigris</em>) e o tigre-siberiano (<em>Panthera tigris altaica</em>) são subespécies de tigre. O ser humano <strong>não tem subespécies vivas reconhecidas</strong> atualmente (já tivemos o <em>Homo sapiens neanderthalensis</em> no passado, mas eram espécies irmãs, não subespécies).</p>
+            </div>
+            <div class="shine">
+                ⚡ <strong>Resumão:</strong> Espécie = conjunto de populações que trocam genes naturalmente. Subespécie = variação regional que ainda é da mesma espécie, mas com um toque especial de adaptação. É tipo o sotaque da biologia!
+            </div>
+        </section>
+
+        <!-- CARD 5: Nomenclatura científica (regras legais) -->
+        <section class="cartao">
+            <h2 class="subtitulo">✍️ Nome científico: a identidade universal</h2>
+            <p class="texto">Você já viu aqueles nomes em <em>itálico</em> como <em>Homo sapiens</em> ou <em>Escherichia coli</em>? É o sistema binomial (dois nomes) criado por Lineu. O primeiro nome é o <strong>gênero</strong>, sempre com inicial maiúscula. O segundo é o <strong>epíteto específico</strong>, tudo minúsculo. E o nome todo fica em itálico (ou sublinhado se manuscrito).</p>
+            <table class="tabela-taxo">
+                <thead>
+                    <tr><th>Ser Vivo</th><th>Nome Científico</th><th>Significado (ou curiosidade)</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Humano</td><td><em>Homo sapiens</em></td><td>“Homem sábio” — Linnaeus acreditava na nossa inteligência.</td></tr>
+                    <tr><td>Leão</td><td><em>Panthera leo</em></td><td>Panthera vem do latim para “caçador”, leo = leão.</td></tr>
+                    <tr><td>Milho</td><td><em>Zea mays</em></td><td>Nome de origem indígena, uma das plantas mais importantes do mundo.</td></tr>
+                    <tr><td>Mosca-das-frutas</td><td><em>Drosophila melanogaster</em></td><td>“Ama orvalho + barriga preta” — queridinha da genética.</td></tr>
+                </tbody>
+            </table>
+            <div class="destaque-info" style="justify-content: left; gap: 12px;">
+                <div class="info-item"><span class="info-numero">📌</span><span class="info-rotulo">Regra: sempre itálico</span></div>
+                <div class="info-item"><span class="info-numero">🔤</span><span class="info-rotulo">Gênero maiúsculo, espécie minúsculo</span></div>
+                <div class="info-item"><span class="info-numero">🌐</span><span class="info-rotulo">Universal: usado em qualquer idioma</span></div>
+            </div>
+        </section>
+
+        <!-- CARD 6: Dicas de ouro + mnemônicos pra nunca mais esquecer -->
+        <section class="cartao">
+            <h2 class="subtitulo">💎 Dicas de ouro pra memorizar a taxonomia</h2>
+            <div class="dicas-grid">
+                <div class="dica">
+                    <span class="dica-icone">🧠</span>
+                    <div>
+                        <strong>Mnêmônico em português:</strong>
+                        <p>“Dentro <strong>R</strong>eina <strong>F</strong>eras <strong>C</strong>om <strong>O</strong>lhinhos <strong>F</strong>ofos <strong>G</strong>igantes <strong>E</strong>speciais” (Domínio, Reino, Filo, Classe, Ordem, Família, Gênero, Espécie).</p>
+                    </div>
+                </div>
+                <div class="dica">
+                    <span class="dica-icone">🔎</span>
+                    <div>
+                        <strong>Subespécie na prática:</strong>
+                        <p>Se você vê um terceiro nome, tipo <em>Gorilla gorilla gorilla</em>, está olhando pra subespécie (o gorila ocidental das terras baixas). Trinômio = subespécie.</p>
+                    </div>
+                </div>
+                <div class="dica">
+                    <span class="dica-icone">🌎</span>
+                    <div>
+                        <strong>Domínios da vida:</strong>
+                        <p>Bacteria (bactérias verdadeiras), Archaea (micro-organismos extremófilos) e Eukarya (tudo que tem núcleo: plantas, fungos, animais).</p>
+                    </div>
+                </div>
+                <div class="dica">
+                    <span class="dica-icone">📖</span>
+                    <div>
+                        <strong>Os 3 reinos mais famosos:</strong>
+                        <p>Animalia (animais), Plantae (plantas), Fungi (cogumelos e fungos). Protistas e cromistas também são importantes mas mais variados.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="frase-motivacional" style="margin-top: 25px;">
+                <p>🌱 “Classificar é conhecer. Conhecer é preservar.”</p>
+                <span>— Inspire-se na diversidade da vida!</span>
+            </div>
+        </section>
+
+        <!-- CARD 7: Bônus - como os cientistas atualizam a taxonomia (sistemática filogenética) -->
+        <section class="cartao">
+            <h2 class="subtitulo">🧬 Taxonomia moderna: DNA e árvores filogenéticas</h2>
+            <p class="texto">Antigamente os cientistas classificavam só pela aparência. Hoje a <strong>sistemática filogenética</strong> usa sequências de DNA e relações evolutivas. Muitos grupos mudaram de lugar! Exemplo: as aves são na verdade um tipo de dinossauro e ficam dentro do grupo dos répteis (clado). O famoso “peixe” não é um grupo válido na taxonomia moderna porque alguns “peixes” são mais próximos de nós do que de outros peixes. 🤯</p>
+            <div class="curiosidade" style="background: rgba(114, 9, 183, 0.05);">
+                <strong>📢 Importante:</strong> a hierarquia clássica (reino, filo, etc) ainda é super útil para o ensino, mas os taxonomistas usam clados e categorias como <strong>superfilos, subordens, infraclasses</strong> – um mundo de detalhes! Mas a base: Domínio → Reino → Filo... continua firme e forte para organizar a vida.
+            </div>
+        </section>
+
+        <!-- Pequeno rodapé informativo (mas o footer.js já cuida do rodapé principal) -->
+        <div style="margin: 30px 0 10px; text-align: center; font-size: 0.85rem; color: var(--text-light);">
+            🧪 Taxonomia é viva! Novas espécies são descobertas todos os anos – só em 2023 foram mais de 200 novas espécies de anfíbios. A ciência nunca para.
+        </div>
+    </main>
+
+    <!-- Rodapé padrão injetado via footer.js -->
+    <script src="../../../script/footer.js"></script>
+</body>
+</html>

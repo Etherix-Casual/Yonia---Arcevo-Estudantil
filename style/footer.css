@@ -6,6 +6,7 @@
     border-top: 1px solid var(--cor-borda);
     color: var(--cor-texto-claro);
     font-size: 0.9rem;
+    position: a;
 }
 
 .rodape p {
